@@ -1,0 +1,2 @@
+$ openssl enc -in <ciphertext> -out binarytext.txt -d -a
+$ openssl rsautl -decrypt -in binarytext.txt -out answer.txt -inkey <private_key>
