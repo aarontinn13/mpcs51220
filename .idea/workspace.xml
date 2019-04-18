@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83d4b3ec-8e55-49c5-8724-27896e4f83fd" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/hw2/big_bus.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw2/instructions.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw2/messaround.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw2/ssh_key" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week2" beforeDir="false" afterPath="$PROJECT_DIR$/week2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/week2/tdd/0_refresher.py" beforeDir="false" afterPath="$PROJECT_DIR$/week2/tdd/0_refresher.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/week2/tdd/1_bank.py" beforeDir="false" afterPath="$PROJECT_DIR$/week2/tdd/1_bank.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/week2/tdd/account.py" beforeDir="false" afterPath="$PROJECT_DIR$/week2/tdd/account.py" afterDir="false" />
@@ -22,20 +19,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hw2/big_bus.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="739">
-              <caret line="198" lean-forward="true" selection-start-line="198" selection-end-line="198" />
+            <state relative-caret-position="1324">
+              <caret line="171" column="33" selection-start-line="171" selection-start-column="33" selection-end-line="171" selection-end-column="33" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hw2/messaround.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -267,7 +255,7 @@
       <workItem from="1554952010153" duration="289000" />
       <workItem from="1555284789282" duration="22000" />
       <workItem from="1555476103823" duration="3184000" />
-      <workItem from="1555527715268" duration="19843000" />
+      <workItem from="1555527715268" duration="20415000" />
     </task>
     <servers />
   </component>
@@ -304,13 +292,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24463000" />
+    <option name="totallyTimeSpent" value="25035000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="51" y="25" width="1869" height="1055" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14591333" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14591333" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" weight="0.32937366" />
@@ -329,7 +316,7 @@
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" id="Run" order="3" visible="true" weight="0.3444871" />
+      <window_info anchor="right" id="Run" order="3" visible="true" weight="0.3444871" />
       <window_info anchor="right" id="SciView" order="4" />
       <window_info anchor="right" id="Database" order="5" />
     </layout>
@@ -464,8 +451,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hw2/big_bus.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="739">
-          <caret line="198" lean-forward="true" selection-start-line="198" selection-end-line="198" />
+        <state relative-caret-position="1324">
+          <caret line="171" column="33" selection-start-line="171" selection-start-column="33" selection-end-line="171" selection-end-column="33" />
           <folding>
             <element signature="e#0#36#0" expanded="true" />
           </folding>
