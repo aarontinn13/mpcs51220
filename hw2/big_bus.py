@@ -89,7 +89,7 @@ class BigBus(object):
             print('sold {} {} ticket(s) for ${:.2f} on {} {}'.format(amount, route, round(price*amount,2), day, _date))
 
     def refund_ticket(self, year, month, day, route, id):
-        '''given a date, route and id, will attempt to refund and remove from database.'''
+        '''given a year, month, day, route and id, will attempt to refund and remove from database.'''
 
         _date = date(year, month, day)
 
@@ -136,12 +136,13 @@ class BigBus(object):
             else:
                 count = 0
                 _date = str(date(year, month, day))  # year-month-day
-                for i in [self.red_i[_date],self.green_i[_date],self.blue_i[_date]]:
-                    r_count = 0
-                    for j in i:
-                        r_count += 1
-                        count += 1
 
+
+
+
+                for i in [self.red_i[_date],self.green_i[_date],self.blue_i[_date]]:
+                    for j in i:
+                        count += 1
                 print('{} tickets sold on {}'.format(count, _date))
 
         except KeyError:
@@ -155,47 +156,5 @@ x = BigBus()
 # sell a few tickets
 x.sell_ticket(2019,4,17,'red',1)
 x.sell_ticket(2019,4,17,'blue',2)
-x.sell_ticket(2019,4,17,'green',3)
-x.sell_ticket(2019,4,18,'red',1)
-x.sell_ticket(2019,4,18,'green',3)
-x.sell_ticket(2019,4,18,'red',1)
-x.sell_ticket(2019,4,18,'blue',1)
-x.sell_ticket(2019,4,18,'red',4)
-x.sell_ticket(2019,4,18,'green',1)
-x.sell_ticket(2019,4,19,'red',1)
-x.sell_ticket(2019,4,19,'green',1)
-x.sell_ticket(2019,4,19,'blue',3)
-x.sell_ticket(2019,4,19,'red',1)
-x.sell_ticket(2019,4,19,'green',1)
-x.sell_ticket(2019,4,19,'red',1)
-x.sell_ticket(2019,4,19,'red',1)
-x.sell_ticket(2019,4,20,'blue',1)
-x.sell_ticket(2019,4,20,'red',20)
-x.sell_ticket(2019,4,20,'green',1)
-x.sell_ticket(2019,4,20,'red',1)
-x.sell_ticket(2019,4,20,'red',1)
-x.sell_ticket(2019,4,20,'green',1)
-x.sell_ticket(2019,4,21,'red',1)
-x.sell_ticket(2019,4,21,'green',1)
-x.sell_ticket(2019,4,21,'red',1)
-x.sell_ticket(2019,4,21,'blue',1)
-x.sell_ticket(2019,4,21,'blue',1)
-x.sell_ticket(2019,4,21,'red',1)
-x.sell_ticket(2019,4,22,'red',1)
-x.sell_ticket(2019,4,22,'green',1)
-x.sell_ticket(2019,4,22,'blue',1)
-x.sell_ticket(2019,4,22,'red',1)
-x.sell_ticket(2019,4,22,'red',1)
-x.sell_ticket(2019,4,23,'green',1)
-x.sell_ticket(2019,4,23,'red',1)
-x.sell_ticket(2019,4,23,'blue',1)
-x.sell_ticket(2019,4,23,'blue',1)
-x.sell_ticket(2019,4,23,'red',1)
-x.sell_ticket(2019,4,23,'green',1)
-x.sell_ticket(2019,4,24,'red',1)
-x.sell_ticket(2019,4,24,'green',1)
-x.sell_ticket(2019,4,24,'red',1)
-x.sell_ticket(2019,4,24,'blue',1)
 
-
-x.report(False, 'blue')
+x.report(False, 'blue', 2019, 4, 17)
