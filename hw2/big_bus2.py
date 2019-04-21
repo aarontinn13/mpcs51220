@@ -151,38 +151,46 @@ class BigBus(cmd.Cmd):
         day = int(arg[2])
         route = arg[3]
         ID = arg[4]
+        try:
+            _date = date(year, month, day)
+        except ValueError:
+            print('please enter a valid date')
 
-        _date = date(year, month, day)
+        #check if valid route
+        if route not in ('red','blue','green'):
+            print('please choose a valid route \"red\", \"blue\", \"green\"')
+            return
 
         if route == 'red':
             for i in range(len(BigBus.red_i[str(_date)])):
                 if str(BigBus.red_i[str(_date)][i][0]) == ID:
                     print('refunding {} back for ${:.2f}'.format(BigBus.red_i[str(_date)][i][0],BigBus.red_i[str(_date)][i][1]))
                     del BigBus.red_i[str(_date)][i]
-                    break
-
+                    return
+            print('cannot find {} in {} route'.format(ID, route))
+            return
         if route == 'green':
             for i in range(len(BigBus.green_i[str(_date)])):
                 if str(BigBus.green_i[str(_date)][i][0]) == ID:
                     print('refunding {} back for ${:.2f}'.format(BigBus.green_i[str(_date)][i][0],BigBus.green_i[str(_date)][i][1]))
                     del BigBus.green_i[str(_date)][i]
-                    break
-
+                    return
+            print('cannot find {} in {} route'.format(ID, route))
+            return
         if route == 'blue':
             for i in range(len(BigBus.blue_i[str(_date)])):
                 if str(BigBus.blue_i[str(_date)][i][0]) == ID:
                     print('refunding {} back for ${:.2f}'.format(BigBus.blue_i[str(_date)][i][0],BigBus.blue_i[str(_date)][i][1]))
                     del BigBus.blue_i[str(_date)][i]
-                    break
-
+                    return
+            print('cannot find {} in {} route'.format(ID, route))
+            return
     def do_report(self, arg):
         '''
-        :param arg:[today, route, year, month, day]
+        Enter True to report today with given route or False to choose custom date with all routes
+        :param arg:[today]
         :param today: True or False
-        :param route: red, green or blue
-        :param year: 2019
-        :param month: integer 1 - 12
-        :param day: integer 1 - 31
+
         :return:
         '''
 
